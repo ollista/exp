@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+<style>button:hover, button:focus, button:active {color:red;}</style>
+<meta charset="UTF-8">
+<title>Weather</title>
+</head><body>
+<div id="widg">
+<a class="weatherwidget-io" href="https://forecast7.com/en/51d864d30/spijkenisse/" data-label_1="SPIJKENISSE" data-label_2="WEATHER" data-theme="original" >SPIJKENISSE WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<a href="https://www.accuweather.com/en/nl/spijkenisse/251517/weather-forecast/251517" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
+-->
+</a><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+</div>
+
+<div id="embd">
+<video id="wbcam" width="100%" height="100%" controls autoplay preload="auto"><source src="https://584b389d712f9.streamlock.net/live/rotterdam.stream/playlist.m3u8" type="video/mp4"></video></div>
+<button onclick="document.getElementById('wbcam').src='https://584b389d712f9.streamlock.net/live2/scheveningen.stream/playlist.m3u8';" type="button">Scheveningen</button>
+<button onclick="document.getElementById('wbcam').src='https://5f9796575af00.streamlock.net/live/rotterdam3.stream/playlist.m3u8';" type="button">Rotterdam</button>
+<button onclick="document.getElementById('wbcam').src='https://5f9796575af00.streamlock.net/live/dordrecht.stream/playlist.m3u8';" type="button">Dordrecht</button>
+<button onclick="document.getElementById('wbcam').src='https://5b8d2cbe62ad6.streamlock.net/live/leeuwarden1.stream/playlist.m3u8';" type="button">Leeuwarden</button>
+<button onclick="document.getElementById('wbcam').src='https://584b389d712f9.streamlock.net/live/singel.stream/playlist.m3u8';" type="button">Harlingen</button>
+<button onclick="document.getElementById('wbcam').src='https://disk.timetechnology.ru:8080/1057/hls/live.m3u8';" type="button">Peterhof</button>
+<button onclick="embt1();" type="button">Amsterdam-Dam</button>
+<button onclick="embt2();" type="button">Venice</button>
+
+<script>
+function embt1(){document.getElementById('embd').innerHTML='<iframe width="1008" height="600" src="http://www.youtube.com/embed/yST7Ux0ypUM"></iframe>';}
+function embt2(){document.getElementById('embd').innerHTML='<iframe width="1008" height="600" src="http://www.youtube.com/embed/ph1vpnYIxJk"></iframe>';}
+</script
+
+</body></html>
